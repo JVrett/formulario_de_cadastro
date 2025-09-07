@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Cadastre-se</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-AU Compatible" content="ie = edge">
+    <meta name="description" content="Uma landing page de um formulario de cadastro. Também há interatividade com o botão de cadastrar e com os campos de texto e responsividade.">
+    <meta name="keywords" content="arco-iris, CSS, Programação">
+    <meta name="author" content="João Victor Lima Dos Santos Manço">
+    <meta name="robots" content="index,follw">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/icone.png" type="image/x-icon">
+ 
+</head>
+
+<body>
+    <section class="container">
+        <header>Formulario de Cadastro</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Nome completo</label>
+                <input type="text" placeholder="Insira seu nome completo" required>
+            </div>
+
+            <div class="input-box">
+                <label>Endereço de email</label>
+                <input type="text" placeholder="Insira seu endereço de email" required>
+            </div>
+            <div class="column">
+             <div class="input-box">
+                <label>Telefone</label>
+                <input type="number" placeholder="Insira seu numero de telefone" required>
+            </div>
+
+             <div class="input-box">
+                <label>Data de nascimento</label>
+                <input type="date" placeholder="Insira sua data de nascimento" required>
+            </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Genero</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-homem" name="gender" checked>
+                        <label for="check-homem">Homem</label>
+                    </div>
+
+                     <div class="gender">
+                        <input type="radio" id="check-mulher" name="gender">
+                        <label for="check-mulher">Mulher</label>
+                    </div>
+
+                     <div class="gender">
+                        <input type="radio" id="check-outro" name="gender">
+                        <label for="check-outro">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box addres">
+                <label>Endereço</label>
+                <input type="text" placeholder="Insira sua rua" required>
+                <input type="text" placeholder="Insira seu numero" required>
+                <div class="column">
+                <div class="select-box">
+                    <select>
+                        <option hidden>País</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Bolivia</option>
+                        <option>Paraguai</option>
+                        <option>Colombia</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="Insira sua cidade" required>
+                </div>
+
+                <div class="column">
+                    <input type="text" placeholder="Insira seu estado" required>
+                <input type="number" placeholder="Insira seu código postal" required>
+                </div>
+                
+            </div>
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    
+</body>
+</html>
